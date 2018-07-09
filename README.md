@@ -11,3 +11,7 @@
 - `emit(type, ...args)`
 - `removeListener(type, cb)`
 - `removeAllListener()`
+
+## Test
+
+`npm test`
