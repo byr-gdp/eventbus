@@ -15,3 +15,8 @@
 ## Test
 
 `npm test`
+
+## Todo
+
+- [ ] TypeScript 重写
+- [ ] Rollup 打包
