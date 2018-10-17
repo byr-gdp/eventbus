@@ -2,7 +2,7 @@ import resolve from 'rollup-plugin-node-resolve';
 import common from 'rollup-plugin-commonjs';
 import babel from 'rollup-plugin-babel';
 
-const formatList = ['umd', 'cjs', 'iife']
+const formatList = ['umd', 'cjs', 'iife'];
 const basicConfig = {
   input: 'index.js',
   output: {

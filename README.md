@@ -19,4 +19,4 @@
 ## Todo
 
 - [ ] TypeScript 重写
-- [ ] Rollup 打包
+- [x] Rollup 打包
