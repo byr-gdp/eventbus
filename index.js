@@ -7,7 +7,7 @@ class EventBus {
     this.listeners.push({
       type,
       cb,
-      once: false
+      once: false,
     });
   }
 
@@ -17,11 +17,11 @@ class EventBus {
 
   emit(type, ...args) {
     const listeners = this.listeners.filter(listener => listener.type === type);
-    listeners.forEach(listener => {
+    listeners.forEach((listener) => {
       listener.cb.apply(null, args);
     });
 
-    listeners.forEach(listener => {
+    listeners.forEach((listener) => {
       if (listener.once) {
         this.removeListener(type, listener.cb);
       }
@@ -37,6 +37,7 @@ class EventBus {
   }
 
   removeListener(type, cb) {
+    // eslint-disable-next-line
     this.listeners = this.listeners.filter(listener => listener.type !== type || listener.cb !== cb);
   }
 
@@ -45,4 +46,4 @@ class EventBus {
   }
 }
 
-module.exports = exports = EventBus;
+module.exports = EventBus;

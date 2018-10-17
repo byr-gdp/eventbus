@@ -7,11 +7,17 @@
     "test": "test"
   },
   "scripts": {
-    "test": "ava --verbose"
+    "test": "ava --verbose",
+    "eslint": "npx eslint ./ --fix"
   },
   "author": "byr-gdp",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "ava": "1.0.0-beta.6"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
   }
 }
